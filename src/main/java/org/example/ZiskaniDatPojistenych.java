@@ -42,8 +42,9 @@ public class ZiskaniDatPojistenych {
         } catch (NumberFormatException e) {
             System.out.println("Zadejte platné číslo.");
         }
+        }
+    return cislo;  // <- Nezapomeň na návratovou hodnotu
     }
-
     
     /**
      * Získá telefonní číslo (bez nutnosti zadat a bez validace formátu).
