@@ -31,17 +31,20 @@ public class ZiskaniDatPojistenych {
      * Získá celé číslo (věk).
      */
     public int zadejCislo(String prompt) {
-        while (true) {
-            System.out.print(prompt);
-            try {
-                int cislo = Integer.parseInt(scanner.nextLine());
-                return cislo;
-            } catch (NumberFormatException e) {
-                System.out.println("Zadejte platné číslo.");
-            }
+    boolean platneCislo = false;  // flag pro kontrolu správnosti vstupu
+    int cislo = 0;
+
+    while (!platneCislo) {  // Smyčka běží, dokud není zadáno platné číslo
+        System.out.print(prompt);
+        try {
+            cislo = Integer.parseInt(scanner.nextLine());
+            platneCislo = true;  // Pokud došlo k úspěšnému parsování, nastavíme flag na true
+        } catch (NumberFormatException e) {
+            System.out.println("Zadejte platné číslo.");
         }
     }
 
+    
     /**
      * Získá telefonní číslo (bez nutnosti zadat a bez validace formátu).
      */
