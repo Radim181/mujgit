@@ -35,7 +35,7 @@ public class Main {
                     break;
                 // Výpis všech pojištěnýc
                 case "2":
-                    db.vypsatPojistene();
+                    db.vypisPojistene();
                     break;
                 // Vyhledání pojištěného podle jména a příjmení
                 case "3":
