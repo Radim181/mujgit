@@ -40,7 +40,7 @@ public class DatabazePojistenych {
     /**
      * Vyhledá pojištěného podle jména a příjmení.
      */
-    public void vyhledatPojisteneho(String jmeno, String prijmeni) {
+    public void vyhledejPojisteneho(String jmeno, String prijmeni) {
         boolean nalezeno = false;
         for (PojistenaOsoba p : seznam) {
             if (p.getJmeno().equalsIgnoreCase(jmeno) && p.getPrijmeni().equalsIgnoreCase(prijmeni)) {
