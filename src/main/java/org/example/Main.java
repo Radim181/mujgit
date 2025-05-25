@@ -31,7 +31,7 @@ public class Main {
                     String prijmeni = input.zadejJmeno("Zadejte příjmení: ");
                     int vek = input.zadejCislo("Zadejte věk: ");
                     String telefon = input.zadejTelefon("Zadejte telefon: ");
-                    db.pridatPojisteneho(new PojistenaOsoba(jmeno, prijmeni, vek, telefon));
+                    db.pridejPojisteneho(new PojistenaOsoba(jmeno, prijmeni, vek, telefon));
                     break;
                 // Výpis všech pojištěnýc
                 case "2":
