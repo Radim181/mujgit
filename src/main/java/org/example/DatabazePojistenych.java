@@ -18,7 +18,7 @@ public class DatabazePojistenych {
     /**
      * Přidá pojištěného do seznamu.
      */
-    public void pridatPojisteneho(PojistenaOsoba p) {
+    public void pridejPojisteneho(PojistenaOsoba p) {
         seznam.add (p);
         System.out.println("Pojištěný byl přidán.");
     }
