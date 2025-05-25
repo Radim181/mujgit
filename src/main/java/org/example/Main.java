@@ -41,7 +41,7 @@ public class Main {
                 case "3":
                     String hledaneJmeno = input.zadejJmeno("Zadejte jméno: ");
                     String hledanePrijmeni = input.zadejJmeno("Zadejte příjmení: ");
-                    db.vyhledatPojisteneho(hledaneJmeno, hledanePrijmeni);
+                    db.vyhledejPojisteneho(hledaneJmeno, hledanePrijmeni);
                     break;
                 // Ukončení programu
                 case "4":
