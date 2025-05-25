@@ -26,7 +26,7 @@ public class DatabazePojistenych {
     /**
      * Vypíše všechny pojištěné.
      */
-    public void vypsatPojistene() {
+    public void vypisPojistene() {
         if (seznam.isEmpty()) {
             System.out.println("Seznam pojištěných je prázdný.");
         } else {
